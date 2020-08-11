@@ -1,7 +1,9 @@
-<!-- input and forms -->
-<!-- textbox,checkbox,radiobuttons,buttons,textareas -->
-<!-- In HTML they're not functional;you need JavaScript or any other backend language -->
-<!-- refer w3schools.com/tagS/att_input_type.asp -->
+<!-- iframe enables embeded website into your own webpage -->
+<!-- most popularly YouTube is embeded into webpages using iframe -->
+<!-- control the size;control the border -->
+<!-- websites prevent iframe; to use them by other websites -->
+<!-- one of the dangers of iframe is fake posing of other websites; data breaching can be done -->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,46 +12,7 @@
         <title>Ruchit's website</title>
     </head>
     <body>
-        <header>
-            <a href="https://w3schools.com/tagS/att_input_type.asp"><h2>References</h2></a>
-        </header>
-
-        <section>
-            <form action="#" method="#">
-                <input type="submit"/>
-            </form>
-        </section>
-        <hr/>
-        <hr/>
-        <section>
-            <input type="password"/>  <!-- textbox for password -->
-            <input type="text" value="Enter your Username" />  <!-- default content -->
-            <input type="text" placeholder="Enter your name"/>
-            <!-- textarea is itself a tag; resizable; specific size can be fixed -->
-            <textarea rows="10" cols="30" >Enter a Paragraph
-            </textarea>
-            <!-- other types -->
-            <br/>
-            <br/>
-            <br/>
-            <input type="date" />
-            <input type="email" />
-            <input type="range" />
-            <input type="file" />
-            <!-- buttons -->
-            <br/>
-            <br/>
-            <br/>
-            <input name="tick"type="checkbox" value="a1"/>
-            <input name="tick" type="checkbox" value="a2"/>
-            <input name="tick" type="checkbox" value="a3"/>
-            <br/>
-            <input type="radio" name="btn" value="r1"/>
-            <input type="radio" name="btn" value="r2"/>
-            <input type="radio" name="btn" value="r3"/>
-            <!-- types of button -->
-            <input type="submit" />
-        </section>
-
+        <iframe width="1000" height="800" frameborder=0 src="https://giraffeacademy.com">Alternative Text</iframe>
+        <!-- amazon doesn't allow iframe -->
     </body>
 </html>
