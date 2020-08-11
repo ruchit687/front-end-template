@@ -1,14 +1,8 @@
-<!-- 3 sections of web page: header,main,footer -->
-<!-- structuring the web page -->
-<!-- More organised organisation website;easier for others as well as the owner to re-look the content and modify -->
-<!-- sections tag doesn't necessarily be inside article but they happen to be go together. -->
-<!-- header 1 is main; header 2 is for sections, use headers in heirarchy fashion -->
-<!-- aside tag, not directly connected to main content of webpage; 
-    used for advertisement, google adsense, it is shown,but not directly connected to core content on website -->
-<!-- SEO, ease to go through the content of the website by search engines; better info extracted if structured-->
-<!-- THEY ARE IMPORTANT/ HTML IS NO-NONSENSE LANGUAGE -->
-<!-- incresed readability and parsing power for search engines -->
-
+<!-- Links in the website -->
+<!-- navigation list to other pages, files, pdf, images -->
+<!-- a tag is used to link other pages not in our website (External links to other websites/pages) -->
+<!-- wanna use new tab to open the link; so use target as "_blank" -->
+<!-- also you can use a for link to other pages on the same website -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,30 +12,37 @@
         <header>
             <nav>
                 <!-- let's introduce a navigation links -->
+                <!-- link to same website, other page -->
+                <h3>Navigation bar- Header part</h3>
+                <a href="page2.html">page2</a>
+                <a href="dir/page3.html">page3</a>
             </nav>
+            <hr/> <hr/>
         </header>
         <main>
+            <aside>
+                Extra other content, maybe advertisement or link to other posts (it is inside main but still shown outside)
+            </aside>
+            <h1>Main part</h1>
             <article>
                 <!-- blog posts -->
-                <h1>the main header-blog name</h1>
-                <section>
-                    <aside>
-                        Extra other content, maybe advertisement or link to other posts
-                    </aside>
-                </section>
-                <section>
-                    <h2>Header for section1 for blog</h2>
-                    <h3>sub-heading for section1</h3>
-                    <!-- section 1 for a blog -->
+                <h1>blog name</h1>
+                <section>Links: (section1External Links) <a href="https://www.google.com" target="_blank">Google's <b>Homepage</b></a>
                 </section>
                 <section>
                     <h2>Header for section2 for blog</h2>
-                    <h3>sub-heading for section2 </h3>
-                    <!-- section 2 for a blog -->
+                    <h3>sub-heading for section2</h3>
+                </section>
+                <section>
+                    <h2>Header for section3 for blog</h2>
+                    <h3>sub-heading for section3 </h3>
+                    <a href="cat.jpg">Cat picture</a> in section 3
                 </section>
             </article>
+        <hr/>
         </main>
         <footer>
+            <h3>Footer Part</h3>
             <section>
                 <p>Contact details, etc</p>
             </section>
