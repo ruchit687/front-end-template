@@ -1,13 +1,12 @@
-<!-- Tables in HTML -->
-<!-- row is one entry in table; one horizontal entry tr -->
-<!-- one column cell of row is td -->
-<!-- headers for data cols: th (bold)-->
-<!-- tables are flexible;you can put entry in extra col with a header  -->
-<!-- tables automatically resize themselves as per the windows visibility -->
-<!-- add caption or title of the table -->
-<!-- table head [thead] and table body[tbody] just for ease... specidied sections; better organised -->
-<!-- colspan (column spans) -->
+<!-- container in HTML; starts and ending tags; wrapping content or using wrapping tags -->
+<!-- Tags: divs and spans are containers; wrapping the content -->
+<!-- Two main ways for displaying content in HTML: inline & block; there are more ways -->
+<!-- CSS can display block and inline elements -->
+<!-- block elements are HTML elements that take up the entire width of the page  -->
+<!-- inline elements are elements that take up as much as they need -->
 
+<!-- >>Spans are inline containers -->
+<!-- >>Divs are block containers -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,29 +15,22 @@
         <title>Ruchit's website</title>
     </head>
     <body>
-        <table>
-            <caption><h2>List of numbers</h2></caption>
-            <thead>
-                <tr>
-                    <th>number1</th>
-                    <th>number2</th>
-                    <th>number3</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td colspan="2">one</td>
-                    <td>two</td>
-                    <td>three</td>
-                    <td>three and a half</td>
+        <h2>Inline examples</h2>
+        <a href="#">Link1</a>
+        <a href="#">Link2</a>
+        <hr/>
+        <h2>Block examples</h2>
+        <p>paragraph1</p>
+        <p>paragraph2</p>
+    <hr/>
+    <hr/>
 
-                </tr>
-                <tr>
-                    <td>four</td>
-                    <td>five</td>
-                    <td>six</td>
-                </tr>
-            </tbody>
-        </table>
+    <span>span1</span>
+    <span>span2</span>
+    
+    <br/><br/>
+    
+    <div>div1</div>
+    <div>div2</div>
     </body>
 </html>
