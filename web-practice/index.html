@@ -1,9 +1,39 @@
+<!-- we can create layouts using tags(HTML tags) HTML is used to define layout of web pages -->
+<!-- these tags tell web browser how website looks and to display the content -->
+<!-- first we create a basic skeleton -->
+<!-- DOCTYPE tell web browser that type of document is HTML -->
+<!-- container tags have other tags, as they have start and end tags -->
+<!-- head: data about the document-title,description,image,link to other files(import resources)
+        [command center]/[metadata] -->
+<!-- body: content part of web page(display or rendered) -->
+<!-- web browser decipher these tags and figure out to display all the information & layout the info.
+        [parsed by web browser] -->
+<!-- metadata tag defines info about the file
+        meta charset:[we used that to define the character encoding of my webpage]
+        [telling web browser what type of characters we're using in this document] 
+        meta description: google use this info to show info abt our web page-->
+<!-- HTML has tags, tags have attribute/properties like
+        meta tag has attribute charset,name,content holds what type of info we want to define, 
+        name: we wanna define description; content: tells what description should be -->
+<!-- content in body, header tags, paragraphs,bold,italize  -->
+<!-- the way you order the tags the website shows it that way.. -->
+<!-- whitespace is ignored by HTML, but may not by tags using break tag; horiontal rule tag - line to separate content -->
+<!-- horizaontal rule and break are single tags -->
+<!-- Big and small tags to change the size -->
+<!-- subscript and superscripts tags -->
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My pratice website</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is an awesome website">
+        <title>Ruchit's website</title>
     </head>
-    <body>
-        <h1>hello world!</h1>
+    <body> 
+        <h1>Ruchit's Website</h1>
+        <br/>
+        <hr/>
+        <p><big>This is</big><small> my </small><b><i>paragraph</i></b></p>
+        <p>Chemical formula of water: H<sub>2</sub>>O</p>
+        <p>ten square: 10<sup>2</sup> = 100</p>
     </body>
 </html>
