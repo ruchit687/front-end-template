@@ -1,7 +1,13 @@
-<!-- orderd lists; unordered list: bullets; description list -->
-<!-- each list has list items -->
-<!-- type of ol: 1,a,A,I,i,etc -->
-<!-- embed list into lists -->
+<!-- Tables in HTML -->
+<!-- row is one entry in table; one horizontal entry tr -->
+<!-- one column cell of row is td -->
+<!-- headers for data cols: th (bold)-->
+<!-- tables are flexible;you can put entry in extra col with a header  -->
+<!-- tables automatically resize themselves as per the windows visibility -->
+<!-- add caption or title of the table -->
+<!-- table head [thead] and table body[tbody] just for ease... specidied sections; better organised -->
+<!-- colspan (column spans) -->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,27 +16,29 @@
         <title>Ruchit's website</title>
     </head>
     <body>
-        <ul> 
-            <li><a href="#">Apples</a></li>
-            <li>Oranges</li>
-            <li>Bananas</li>
-        </ul>
-        
-        <ol type="1">
-            <li>Mouses</li>
-            <li>Keyboards</li>
-                <ol type="i">
-                    <li>Type1</li>
-                    <li>Type2</li> 
-                </ol>
-            <li>Monitors</li>
-        </ol>
+        <table>
+            <caption><h2>List of numbers</h2></caption>
+            <thead>
+                <tr>
+                    <th>number1</th>
+                    <th>number2</th>
+                    <th>number3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">one</td>
+                    <td>two</td>
+                    <td>three</td>
+                    <td>three and a half</td>
 
-        <dl>
-            <dt>Apples</dt>
-            <dd>- They are red.</dd>
-            <dt>Oranges</dt>
-            <dd>- They are rich in Vitamin C.</dd>
-        </dl>
+                </tr>
+                <tr>
+                    <td>four</td>
+                    <td>five</td>
+                    <td>six</td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>
