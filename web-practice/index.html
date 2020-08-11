@@ -1,18 +1,50 @@
-<!-- let the HTML speak for itself, use comments to explain when it is required.
-     This is good practice so you write clean code. -->
-<!-- style attributes  colors -->
-<!-- paragraph's background-color overrides body's background-color -->
+<!-- 3 sections of web page: header,main,footer -->
+<!-- structuring the web page -->
+<!-- More organised organisation website;easier for others as well as the owner to re-look the content and modify -->
+<!-- sections tag doesn't necessarily be inside article but they happen to be go together. -->
+<!-- header 1 is main; header 2 is for sections, use headers in heirarchy fashion -->
+<!-- aside tag, not directly connected to main content of webpage; 
+    used for advertisement, google adsense, it is shown,but not directly connected to core content on website -->
+<!-- SEO, ease to go through the content of the website by search engines; better info extracted if structured-->
+<!-- THEY ARE IMPORTANT/ HTML IS NO-NONSENSE LANGUAGE -->
+<!-- incresed readability and parsing power for search engines -->
 
-<!-- website : w3schools color list - CSS Colors; you can use Color Name or HEX codes -->
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="This is an awesome website">
         <title>Ruchit's website</title>
     </head>
-    <body style="background-color: lightblue;"> 
-        <h2 style="color: green;">Style and Colors</h2>
-        <p style="color: blue; background-color: yellow;">You can style your and make it look pretty. You can use CSS to style and color.</p>
+    <body>
+        <header>
+            <nav>
+                <!-- let's introduce a navigation links -->
+            </nav>
+        </header>
+        <main>
+            <article>
+                <!-- blog posts -->
+                <h1>the main header-blog name</h1>
+                <section>
+                    <aside>
+                        Extra other content, maybe advertisement or link to other posts
+                    </aside>
+                </section>
+                <section>
+                    <h2>Header for section1 for blog</h2>
+                    <h3>sub-heading for section1</h3>
+                    <!-- section 1 for a blog -->
+                </section>
+                <section>
+                    <h2>Header for section2 for blog</h2>
+                    <h3>sub-heading for section2 </h3>
+                    <!-- section 2 for a blog -->
+                </section>
+            </article>
+        </main>
+        <footer>
+            <section>
+                <p>Contact details, etc</p>
+            </section>
+        </footer>
     </body>
 </html>
