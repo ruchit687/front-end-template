@@ -1,12 +1,7 @@
-<!-- container in HTML; starts and ending tags; wrapping content or using wrapping tags -->
-<!-- Tags: divs and spans are containers; wrapping the content -->
-<!-- Two main ways for displaying content in HTML: inline & block; there are more ways -->
-<!-- CSS can display block and inline elements -->
-<!-- block elements are HTML elements that take up the entire width of the page  -->
-<!-- inline elements are elements that take up as much as they need -->
-
-<!-- >>Spans are inline containers -->
-<!-- >>Divs are block containers -->
+<!-- input and forms -->
+<!-- textbox,checkbox,radiobuttons,buttons,textareas -->
+<!-- In HTML they're not functional;you need JavaScript or any other backend language -->
+<!-- refer w3schools.com/tagS/att_input_type.asp -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,22 +10,46 @@
         <title>Ruchit's website</title>
     </head>
     <body>
-        <h2>Inline examples</h2>
-        <a href="#">Link1</a>
-        <a href="#">Link2</a>
-        <hr/>
-        <h2>Block examples</h2>
-        <p>paragraph1</p>
-        <p>paragraph2</p>
-    <hr/>
-    <hr/>
+        <header>
+            <a href="https://w3schools.com/tagS/att_input_type.asp"><h2>References</h2></a>
+        </header>
 
-    <span>span1</span>
-    <span>span2</span>
-    
-    <br/><br/>
-    
-    <div>div1</div>
-    <div>div2</div>
+        <section>
+            <form action="#" method="#">
+                <input type="submit"/>
+            </form>
+        </section>
+        <hr/>
+        <hr/>
+        <section>
+            <input type="password"/>  <!-- textbox for password -->
+            <input type="text" value="Enter your Username" />  <!-- default content -->
+            <input type="text" placeholder="Enter your name"/>
+            <!-- textarea is itself a tag; resizable; specific size can be fixed -->
+            <textarea rows="10" cols="30" >Enter a Paragraph
+            </textarea>
+            <!-- other types -->
+            <br/>
+            <br/>
+            <br/>
+            <input type="date" />
+            <input type="email" />
+            <input type="range" />
+            <input type="file" />
+            <!-- buttons -->
+            <br/>
+            <br/>
+            <br/>
+            <input name="tick"type="checkbox" value="a1"/>
+            <input name="tick" type="checkbox" value="a2"/>
+            <input name="tick" type="checkbox" value="a3"/>
+            <br/>
+            <input type="radio" name="btn" value="r1"/>
+            <input type="radio" name="btn" value="r2"/>
+            <input type="radio" name="btn" value="r3"/>
+            <!-- types of button -->
+            <input type="submit" />
+        </section>
+
     </body>
 </html>
