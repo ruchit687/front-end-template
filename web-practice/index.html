@@ -1,8 +1,7 @@
-<!-- you need to add controls inorder to play the video -->
-<!-- add thumbnail using poster -->
-<!-- adjust size using width & height -->
-<!-- autoplay usign just "autoplay" -->
-<!-- loop/replay using "loop" -->
+<!-- orderd lists; unordered list: bullets; description list -->
+<!-- each list has list items -->
+<!-- type of ol: 1,a,A,I,i,etc -->
+<!-- embed list into lists -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,15 +10,27 @@
         <title>Ruchit's website</title>
     </head>
     <body>
-        <video width="400" src="video5.mp4" poster="cat.jpg" autoplay loop controls>alternate texting</video>
-        <br/>
-        <br/>
-        <h1>Youtube's iframe to play youtube video on your website</h1>
-        <hr/>
-        <!-- we can change the options of this video while sharing embed; YouTube provides choice... -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/zjGw871JJ8o" frameborder="0" 
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+        <ul> 
+            <li><a href="#">Apples</a></li>
+            <li>Oranges</li>
+            <li>Bananas</li>
+        </ul>
         
+        <ol type="1">
+            <li>Mouses</li>
+            <li>Keyboards</li>
+                <ol type="i">
+                    <li>Type1</li>
+                    <li>Type2</li> 
+                </ol>
+            <li>Monitors</li>
+        </ol>
+
+        <dl>
+            <dt>Apples</dt>
+            <dd>- They are red.</dd>
+            <dt>Oranges</dt>
+            <dd>- They are rich in Vitamin C.</dd>
+        </dl>
     </body>
 </html>
