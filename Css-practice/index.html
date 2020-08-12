@@ -1,12 +1,11 @@
-<!-- we can control spacing; we use paddding to control spacing inside the elements
-     we can use margins to use it outside of the elements;padding & margin can be applied inline
-    margin push html elements away from each other -->
-
-<!-- padding,padding-top,padding-bottom,padding-left,padding-right -->
-<!-- padding top,right,bottom,left -- it goes clockwise -->
-<!-- margin,margin-top,margin-bottom,margin-left,margin-right -->
-<!-- margin also goes clockwise, and it can also be negative(avoid they can overlap) -->
-
+<!-- floats and display allow you to change the way the elements are displayed interact with other elements on your website -->
+<!-- float: left,right, -->
+<!-- display: defines how your elements are diaplayed -->
+<!-- display: block display(elements are displayed in a block format)
+              inline display(elements are diaplyed inline way) -->
+<!-- there are certain elements which are displayed in block like paragraph, unordered lists, etc
+    similarly there are certain elements in HTML which are displayed in inline like span -->
+<!-- NOTE:: display: none; you'll get rid of the element on the web page -->
 <!DOCTYPE html>
 
 <html>
@@ -17,11 +16,17 @@
     <body>
 
         <header>
-            <h1>CSS Tutorial</h1>
+            <h1 style="margin: 20px;">CSS Tutorial</h1>
         </header>
-
-        <div style="margin: 25px ;padding: 50px; background-color: lightblue;">
-            Padding is extra space on the inside, margins are extra space on the outside. 
-        </div>
+        <ul style="float: left ; background-color: lightblue; padding: 30px; margin: 0px;">
+            <li style="display: inline;">Home</li>
+            <li style="display: none;">About</li>
+            <li style="display: inline;">Contact</li>
+            <li style="display: inline;">Blog</li>
+        </ul>
+        <p>You can use the display and float CSS attributes to change the way that elements on your website are displayed on the screen.</p>
+        <span>item1</span> 
+        <span>item2</span>
+        <span>these are inline elements which take as much space as they need. [inline display] </span>
     </body>
 </html>
