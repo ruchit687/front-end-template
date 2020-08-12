@@ -1,25 +1,27 @@
-<!-- inline styling: using attributes inside a tag, just like in html  -->
-<!-- pixels depends on the scaling of your screen -->
-<!-- we can override the tags of parent -->
-<!-- border has : thickness type color -->
-<!-- width can take pixels or percentage; max-width can also be defined -->
+<!-- we can control spacing; we use paddding to control spacing inside the elements
+     we can use margins to use it outside of the elements;padding & margin can be applied inline
+    margin push html elements away from each other -->
 
-<!-- refer: w3schools.com/cssref/default.asp -->
+<!-- padding,padding-top,padding-bottom,padding-left,padding-right -->
+<!-- padding top,right,bottom,left -- it goes clockwise -->
+<!-- margin,margin-top,margin-bottom,margin-left,margin-right -->
+<!-- margin also goes clockwise, and it can also be negative(avoid they can overlap) -->
 
 <!DOCTYPE html>
+
 <html>
     <head>
         <meta charset="UTF-8">
         <title>Document</title>
     </head>
-    <body style="color: rgb(44, 137, 224); font-size:20px; ">
+    <body>
 
-        <header style="color: red;">
-            <h1 style="color: rgb(55, 223, 55); background-color:lightgoldenrodyellow;">CSS Tutorial</h1>
+        <header>
+            <h1>CSS Tutorial</h1>
         </header>
 
-        <main style="border: 1px solid black; width: 80%; max-width: 500px;">
-            <p><b>This is a Paragraph.</b></p>
-        </main>
+        <div style="margin: 25px ;padding: 50px; background-color: lightblue;">
+            Padding is extra space on the inside, margins are extra space on the outside. 
+        </div>
     </body>
 </html>
