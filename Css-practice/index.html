@@ -1,17 +1,6 @@
-<!-- positioning allows you to set the position of the HTML element relative to itself, relative to document,
-    or relative to screen, or it could be fixed -->
-<!-- In CSS we have 4 basic types of positioning, it could be static,relative,absolute & fixed. -->
-<!-- the default positioning in HTML is static; it simply places the elements in same static orders and position;
-     static simply means they'll layout the elements as they're layed out in HTML document. -->
-<!-- Relative positioning allows you to position an element relative to it's position where it was supposed to be. -->
-<!-- so along with relative we use-- top/bottom/left/right: pixels
-     static elements can't be overlapped; relative means it can overlappped as we can move it from the position
-     where it was supposed to be -->
-<!-- Absolute: to be more specific, here the element will position itself relative to the nearest position ancestor.
-     In other words, if this element in inside of container. it will position itself relative to that container.
-     But otherwise it positions itself relative to the entire document -->
-<!-- Fixed, position the element as per the viewport of the website; it is used with again top/bottom/right/left -->
-
+<!-- opacity: makes stuff transparent it works in the range [0.0,1.0] -->
+<!-- shadow- text-shadow/box-shadow[images]: horizontal vertical blur color  -->
+<!-- border-radius: pixels/percentage 50% gives you circle -->
 <!DOCTYPE html>
 
 <html>
@@ -20,47 +9,7 @@
         <title>Document</title>
     </head>
     <body>
-        <h1 style="margin: 20px;">CSS Tutorial</h1>
-        
-        <div style="position:fixed; bottom: 100px; right: 0px; width:90px; height:90px; background-color: rgb(5, 80, 105);"></div>
-        <br/>
-        <div style="width:100px; height:100px; background-color:rgb(231, 231, 12);"></div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        
+        <h1 style="text-shadow: 0px 2px 5px red ; position: relative ; top: 125px; left:15px; color: blue;">Inspiring brains</h1> 
+        <img style=" border-radius: 10px; box-shadow: 5px 5px 5px grey; opacity: 0.4;" src="Logo.png" alt="inpiringbrains logo" width="250px"/>
     </body>
 </html>
