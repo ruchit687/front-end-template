@@ -1,6 +1,10 @@
-<!-- opacity: makes stuff transparent it works in the range [0.0,1.0] -->
-<!-- shadow- text-shadow/box-shadow[images]: horizontal vertical blur color  -->
-<!-- border-radius: pixels/percentage 50% gives you circle -->
+<!-- text is important - color,font,style  -->
+<!-- font-size: pixels/em[default font-size on user's browser(1em 1 times, 2em 2times)]; normally em= 16px -->
+<!-- font-style: italic,bold,etc -->
+<!-- font-variant: allcapital=smallcaps -->
+<!-- font-weight: bold,etc -->
+<!-- REFERENCE: CSS Web Safe Font Combinations: www.w3schools.com/cssref/css_websafe_fonts.asp -->
+
 <!DOCTYPE html>
 
 <html>
@@ -9,7 +13,13 @@
         <title>Document</title>
     </head>
     <body>
-        <h1 style="text-shadow: 0px 2px 5px red ; position: relative ; top: 125px; left:15px; color: blue;">Inspiring brains</h1> 
-        <img style=" border-radius: 10px; box-shadow: 5px 5px 5px grey; opacity: 0.4;" src="Logo.png" alt="inpiringbrains logo" width="250px"/>
+        <h1 style="font-size: 60px; font-style: italic; font-variant:small-caps;">CSS Tutorial</h1>
+
+        <p style="color: blue; font-size: 2em; font-family:Arial, Helvetica, sans-serif;">Lorem ipsum, or lipsum as it is sometimes known, 
+            is dummy text used in laying out print, graphic or web designs. 
+            The passage is attributed to an unknown typesetter in the 15th century 
+            who is thought to have scrambled parts of 
+            Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+        </p>
     </body>
 </html>
