@@ -1,9 +1,8 @@
-<!-- HTML style tags; we can write all the CSS styling in this tag. -->
-<!-- style is child of head tag! -->
-<!-- we use CSS SELECTOR; so to choose the HTML elements -->
-<!-- basic way to refer to element/selector you can go with NAME of the element. -->
-<!-- style is same as stylesheet in CSS; -->
-<!-- inline can override the style tag attribute values -->
+<!-- EXTERNAL STYLE SHEETS [.css files]; import these files to style your html-->
+<!-- multiple HTML files can import the same CSS file; we link this stylesheet in header -->
+<!-- if the css file is not in the same directory, then you have to use the absolute path or a relative path. -->
+<!-- we can link tag in other HTML pages and have the same styling depending on the name
+     [like body,h1,etc. if h1 is not in this other page it won't apply to that tag.] -->
 
 <!DOCTYPE html>
 
@@ -11,22 +10,12 @@
     <head>
         <meta charset="UTF-8">
         <title>Document</title>
-    <style>
-        body {
-            color: blue;
-            font-size: 30px;
-            font-style: italic;
-            background-color: lightgoldenrodyellow;
-        }
-    </style>
+        <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-        <h1 style="color: green;">CSS Tutorial (override)</h1>
+        <h1>CSS Tutorial</h1>
         <main>
             <p>Style tags are great way to make using CSS easier!</p>
-            <h2>one more header</h2>
         </main>
-        <h1>another header</h1>
-
     </body>
 </html>
