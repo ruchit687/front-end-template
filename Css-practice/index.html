@@ -1,8 +1,6 @@
-<!-- EXTERNAL STYLE SHEETS [.css files]; import these files to style your html-->
-<!-- multiple HTML files can import the same CSS file; we link this stylesheet in header -->
-<!-- if the css file is not in the same directory, then you have to use the absolute path or a relative path. -->
-<!-- we can link tag in other HTML pages and have the same styling depending on the name
-     [like body,h1,etc. if h1 is not in this other page it won't apply to that tag.] -->
+<!-- classes and ids allow us to define identifiers; and allow us to create groups that are 
+     needed to be created to apply CSS style to a specific HTML elements on the website. -->
+<!-- Difference between class and ID;they do the same thing just they help us to override and set priority.  -->
 
 <!DOCTYPE html>
 
@@ -13,9 +11,10 @@
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-        <h1>CSS Tutorial</h1>
-        <main>
-            <p>Style tags are great way to make using CSS easier!</p>
+        <h1 id="home-h1">CSS Tutorial</h1>
+        <main class="fancy-border blue-text">
+            <p>Classes and ID's make it easy to     </p>
         </main>
+        <a href="page2.html">page2</a>
     </body>
 </html>

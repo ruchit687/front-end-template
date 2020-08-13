@@ -1,14 +1,36 @@
-body{
-    color: darkgreen;
-    font-weight: bold;
-    background-color: whitesmoke;
+/* 
+h1{
+    color: blue;
+}
+we see that this got applied to both HTML file's h1 tag so wherever link is present; all h1 tag will turn blue
+============================================================
+>how do we do the styling uniquely?
+>>we use ID a tag can only have exactly one id; for using ID we use hashtag [#] 
+>>we use class by using a dot[.]
+*/
+#home-h1{
+    color: red;
+}
+#page2-h1{
+    color: green;
 }
 
-h1{
-    padding-left: 40px;
-    padding-right: 20px;
-    border: 2px solid ;
-    width: 200px;
-    margin: 20px;
-    background-color: yellow;
+.fancy-border {
+    border: 3px dashed maroon;
 }
+.blue-text {
+    color: blue;
+}
+
+/* When using just CSS- both ID and classes are same in functionality.
+    Though when mixing with some other stuff, Ids are used for identification 
+    & classes are used for storing blocks of styling code */
+/* DIFFERENCEs */
+/* NOTE: you can give same id to different html elements but any element can only have one ID */
+/* NOTE: HTML elements can use more than one class; we separate them by a space while using inside a tag*/
+/* ID's are meant to be used to identify a specific element in the HTML page; IDs are identifier. */
+/* IDs have special attributes with web-browser, like when using JavaScript you can use IDs
+     to identify certain elements in your HTML, these IDs could be used by browser to use different things.  */
+/* IDs should be used when required for 1-2 elements, not when using a bunch of elements; they're identifiers. */
+/* Classes are there when you want to excessively use for many elements; that's what classes are for. */
+
