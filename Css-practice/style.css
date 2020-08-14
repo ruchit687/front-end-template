@@ -1,19 +1,30 @@
-/* flex box is basically just a collection of CSS attributes which can be used together;
-    to create very powerful grid layouts in your CSS
-    Grid layout is basically a bunch of elements or container which are typically interacting with each other.
-    Actually, they're responsive. So if you shrink the size of the screen all items will get smaller and adjust; and
-    similarly if you increase the screen size, then all the items will enlarge themseleves to fit the screen size. */
-/*  */
+/*  we can crate annimations in CSS by using [@keyframes-name]
+    what we want go [from] & go [to] */
+/* once the animation is over it gets back to its original state; it runs whenever we refersh the browser */
 
-.flex-container {
-    display: flex; /* dynamic change in size of each elements. */
-    flex-direction: row; /* row/column */
-    justify-content: space-around; /* space-between/center/flex-start/flex-end */
-    flex-wrap: wrap; /* wrap-reverse/no-wrap >> just wrap the items; 
-    spill on the next line (just like text is wrapped when size is small */
-    align-items: flex-start; /* /flex-end/center/ grid must be same size;level out the grid blocks */
-    align-content: space-between; /* flex-end/center/space-around/flex-start
-    it avoids whitespace by alligning the content together*/
-    /* you can edit one particular item too...using "align-self"; it controls align-items > for specific value */
 
+
+@keyframes change-color {
+    0% {background-color: red;} /* instead of [from] you can use [0%]*/
+    15% {background-color: orange; top:10px; left: 10px;}
+    30% {background-color: yellow;top:20px; left: 20px;}
+    45% {background-color: green;top:30px; left: 30px;}
+    60% {background-color: blue;top:40px; left: 40px;}
+    75% {background-color: indigo;top:50px; left: 50px;}
+    90% {background-color: violet;top:60px; left: 60px;}
+    100% {background-color: yell;} /* instead of [to] you can use [100] */
+    /* we can use[%] to give the intervals, like [20%] [30%] */
+    /* we can flash out rainbow(blinking) */
+    /* top: 10px; left: 10px moving down and moving right */
+
+}
+
+.box-animation:hover { /* we use hover so when you hover then it start animation */
+    position: relative;
+    border: 1px solid black;
+    animation-name: change-color;
+    animation-duration: 4s;
+    animation-delay: 2s; /* delaying the animation start after trigger */
+    animation-iteration-count: 3; /* continue do animation forever [infinite]
+    numeric value- 3 (runs 3 times) */
 }
