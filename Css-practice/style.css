@@ -1,36 +1,81 @@
-/* 
-h1{
-    color: blue;
+#myid{
+    background-color: yellow;
+    /* id rides over anything; also child id overrides the parent id */
 }
-we see that this got applied to both HTML file's h1 tag so wherever link is present; all h1 tag will turn blue
-============================================================
->how do we do the styling uniquely?
->>we use ID a tag can only have exactly one id; for using ID we use hashtag [#] 
->>we use class by using a dot[.]
+
+.class1{
+    background-color: green;
+    /* class1 is paragraph inside main */
+}
+.class2{
+    background-color: hotpink;
+    /* class2 is main */
+}
+
+* {
+    background-color: lightblue;
+    /* star selects everything in the HTML file */
+}
+
+ul > li {
+    background-color: coral;
+    /* get into list items of unordered lists */
+}
+
+ul > li:first-child {
+    background-color: teal;
+    /* parent-child relationship */
+    /* ul > li:last-child {}
+       ul > li:nth-last-child(3) bottom se 3rd */
+}
+
+p + h2 {
+    font-size: 48px;
+    /* select every header2 after paragraph */
+}
+
+[title] {
+    background-color: rebeccapurple;
+    /* selecting particular properties or attributes of an element */
+}
+
+[href] {
+    background-color: white;
+    /* selecting particular properties or attributes of an element */
+}
+
+li[title="lemons"] {
+    color: yellow;
+    /* checking whether a particular element has some attribute of not. */
+    /* any title which has lem in it>  [titile*="lem"] */
+}
+
+input:checked{
+    box-shadow: 3px 3px 3px red;
+    /* attributes for input; set specific CSS attributes for such case
+        setting for all inputs which are checked */
+    /* FOR CHECKBOX */
+}
+
+input:focus{
+    background-color: yellow;
+    /* FOR TEXTBOX */
+}
+/* FOR BOTH CHECKBOX AND TEXTBOX
+input{
+    background-color: yellow;
+    box-shadow: 2px 2px 2px blue;
+} 
+
+    FOR SPECIFIC 
+input[type="checkbox"]:checked {}
 */
-#home-h1{
-    color: red;
-}
-#page2-h1{
-    color: green;
+
+/* FOR HOVERING */
+h2:hover {
+    background-color: white;
 }
 
-.fancy-border {
-    border: 3px dashed maroon;
-}
-.blue-text {
-    color: blue;
-}
 
-/* When using just CSS- both ID and classes are same in functionality.
-    Though when mixing with some other stuff, Ids are used for identification 
-    & classes are used for storing blocks of styling code */
-/* DIFFERENCEs */
-/* NOTE: you can give same id to different html elements but any element can only have one ID */
-/* NOTE: HTML elements can use more than one class; we separate them by a space while using inside a tag*/
-/* ID's are meant to be used to identify a specific element in the HTML page; IDs are identifier. */
-/* IDs have special attributes with web-browser, like when using JavaScript you can use IDs
-     to identify certain elements in your HTML, these IDs could be used by browser to use different things.  */
-/* IDs should be used when required for 1-2 elements, not when using a bunch of elements; they're identifiers. */
-/* Classes are there when you want to excessively use for many elements; that's what classes are for. */
-
+/* NOTE: child overrides parents */
+/* NOTE: IDs override classes */
