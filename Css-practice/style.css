@@ -1,81 +1,19 @@
-#myid{
-    background-color: yellow;
-    /* id rides over anything; also child id overrides the parent id */
+/* flex box is basically just a collection of CSS attributes which can be used together;
+    to create very powerful grid layouts in your CSS
+    Grid layout is basically a bunch of elements or container which are typically interacting with each other.
+    Actually, they're responsive. So if you shrink the size of the screen all items will get smaller and adjust; and
+    similarly if you increase the screen size, then all the items will enlarge themseleves to fit the screen size. */
+/*  */
+
+.flex-container {
+    display: flex; /* dynamic change in size of each elements. */
+    flex-direction: row; /* row/column */
+    justify-content: space-around; /* space-between/center/flex-start/flex-end */
+    flex-wrap: wrap; /* wrap-reverse/no-wrap >> just wrap the items; 
+    spill on the next line (just like text is wrapped when size is small */
+    align-items: flex-start; /* /flex-end/center/ grid must be same size;level out the grid blocks */
+    align-content: space-between; /* flex-end/center/space-around/flex-start
+    it avoids whitespace by alligning the content together*/
+    /* you can edit one particular item too...using "align-self"; it controls align-items > for specific value */
+
 }
-
-.class1{
-    background-color: green;
-    /* class1 is paragraph inside main */
-}
-.class2{
-    background-color: hotpink;
-    /* class2 is main */
-}
-
-* {
-    background-color: lightblue;
-    /* star selects everything in the HTML file */
-}
-
-ul > li {
-    background-color: coral;
-    /* get into list items of unordered lists */
-}
-
-ul > li:first-child {
-    background-color: teal;
-    /* parent-child relationship */
-    /* ul > li:last-child {}
-       ul > li:nth-last-child(3) bottom se 3rd */
-}
-
-p + h2 {
-    font-size: 48px;
-    /* select every header2 after paragraph */
-}
-
-[title] {
-    background-color: rebeccapurple;
-    /* selecting particular properties or attributes of an element */
-}
-
-[href] {
-    background-color: white;
-    /* selecting particular properties or attributes of an element */
-}
-
-li[title="lemons"] {
-    color: yellow;
-    /* checking whether a particular element has some attribute of not. */
-    /* any title which has lem in it>  [titile*="lem"] */
-}
-
-input:checked{
-    box-shadow: 3px 3px 3px red;
-    /* attributes for input; set specific CSS attributes for such case
-        setting for all inputs which are checked */
-    /* FOR CHECKBOX */
-}
-
-input:focus{
-    background-color: yellow;
-    /* FOR TEXTBOX */
-}
-/* FOR BOTH CHECKBOX AND TEXTBOX
-input{
-    background-color: yellow;
-    box-shadow: 2px 2px 2px blue;
-} 
-
-    FOR SPECIFIC 
-input[type="checkbox"]:checked {}
-*/
-
-/* FOR HOVERING */
-h2:hover {
-    background-color: white;
-}
-
-
-/* NOTE: child overrides parents */
-/* NOTE: IDs override classes */
