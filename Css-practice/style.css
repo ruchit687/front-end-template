@@ -1,13 +1,22 @@
-/* import allow us to import other CSS files into the file which we're using */
-@import "header.css";
-@import "paragraph.css";
-/* this will additional Https request, though these may decrease the speed of the website.
-but it make things easy, few import doesn't make much difference;
-but 100s will definitely... potentially slows down the website. */
+/* Using Frameworks directly to quick work. 
+We'll be using Bootstrap; follow the steps:
+1. https://www.getbootstrap.com
+    [it is a CSS Framework used mainly for responsive and mobile-first websites]
+2. Download the files [CSS & Javascript] 
+    you can grab the files from CDNs (server links)
+3. Copy the CSS link and JavaScript script and put both files in HTML link.
+4. Also note there is a mnetion to include to more links to jQuery and Popper.js
+    which need to put before the CSS style & javascript's script.
+5. Use documentation to style your website - like components and layouts. 
+    [copy and use the CSS class codes]
 
-/* we can also override these above attributes directly */
-h1 {
-    color: red;
-}
+> Professional Developers use bootstrap CSS codes. [CSS Framework]
+> Also you can download the files - CSS & Javascript. Modify those files, tweak 
+    & customize as per your liking.
+> Most of the times framework 
 
-/* this is a good design practice, as it modalrises the css code */
+
+>> You can also use MaterializeCSS
+
+
+*/
