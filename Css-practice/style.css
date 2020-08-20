@@ -1,30 +1,13 @@
-/*  we can crate annimations in CSS by using [@keyframes-name]
-    what we want go [from] & go [to] */
-/* once the animation is over it gets back to its original state; it runs whenever we refersh the browser */
+/* import allow us to import other CSS files into the file which we're using */
+@import "header.css";
+@import "paragraph.css";
+/* this will additional Https request, though these may decrease the speed of the website.
+but it make things easy, few import doesn't make much difference;
+but 100s will definitely... potentially slows down the website. */
 
-
-
-@keyframes change-color {
-    0% {background-color: red;} /* instead of [from] you can use [0%]*/
-    15% {background-color: orange; top:10px; left: 10px;}
-    30% {background-color: yellow;top:20px; left: 20px;}
-    45% {background-color: green;top:30px; left: 30px;}
-    60% {background-color: blue;top:40px; left: 40px;}
-    75% {background-color: indigo;top:50px; left: 50px;}
-    90% {background-color: violet;top:60px; left: 60px;}
-    100% {background-color: yell;} /* instead of [to] you can use [100] */
-    /* we can use[%] to give the intervals, like [20%] [30%] */
-    /* we can flash out rainbow(blinking) */
-    /* top: 10px; left: 10px moving down and moving right */
-
+/* we can also override these above attributes directly */
+h1 {
+    color: red;
 }
 
-.box-animation:hover { /* we use hover so when you hover then it start animation */
-    position: relative;
-    border: 1px solid black;
-    animation-name: change-color;
-    animation-duration: 4s;
-    animation-delay: 2s; /* delaying the animation start after trigger */
-    animation-iteration-count: 3; /* continue do animation forever [infinite]
-    numeric value- 3 (runs 3 times) */
-}
+/* this is a good design practice, as it modalrises the css code */
