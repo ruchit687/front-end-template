@@ -1,0 +1,6 @@
+Link to all css properties and support for various browsers.
+https://www.w3schools.com/cssref/css3_browsersupport.asp
+
+>> look for firefox and chrome mainly to decide for rare properties.
+sometimes you need to add an extra tag for particular browser.
+
