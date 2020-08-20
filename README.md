@@ -1,11 +1,19 @@
-# web-templates
-I am sharing few of my website templates, which I made while I was learning to play around with front-end using HTML and CSS. These templates are simple to understand, I haven't use bootstrap in any of them.
+# Website Templates
+  Each Folder is an independent <b>Front-end</b> Project. I have used HTML and CSS to create the look of the websites. [It is just a front-end]
+  Here are the list of Projects and link to preview each one of them:
+### Broadway
+  > Welcome page for a simple product based website.
+### Wine Festival 
+  > A simple schedule page of an event.
+### Typography  
+  > It is a travel blog.
+### Paint
+  > It is a colorful website, can be used by a Paint-Store to order online.
+### Fashion-blog
+  > It is the simplest structure of a blog, made using HTML.
 
-Each folder is a different project. Both HTML_code (structure) and CSS_codes (style-sheet) are in each folders, you can just clone or fork these folders and view them in your browser. Everything is very simple and anyone with even basics of HTML and CSS can understand by just playing around with the code. 
 
-I insist to edit the code as per your comfort and project and have a starting with your own projects. I believe these templates will help you make your own webpages, blog, portfolios.
 
-Thanks for visiting!!
+<em>Practing the front-end.</em>
 
-Atlast, I request every front-end developer, UI/UX designer and other enthusiasts to contribute to this repository and make easy for more people to understand the basics of HTML and CSS.
-
+Made with ❤️ and HTML & CSS by Ruchit Porwal
